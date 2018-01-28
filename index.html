@@ -5,20 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
   <title>Internship | Microsite</title>
 </head>
 <body>
-  <div class="home-intro">
-    <div class="logo"><img src="/assets/img/logo.svg" alt="logo"></div>
-    <div class="intro">
-      <h2 class="title">Enter The Internship</h2>
-      <span>That Could Determine Your Future Carrer</span>
-      <button class="button">Start Now</button>
+  <div class="container">
+    <div ><img class="transition" src="/assets/img/logo.svg" alt="logo"></div>
+    <div class="intro-tag">
+      <h2 class="transition">Enter The InternShip</h2>
+      <p class="sub-tagline transition">That could determine your future career!</p>
+      <a href="ques1.html" class="start btn">Start Now</a>
     </div>
-    
-    <div class="footer-txt">
-      <p>This questionnaire will tell us a little bit about yourself and what kind of an intern you’d potentially be at CoDesign. Keep your resume at hand though, you’ll need to submit it at the end.</p>
+    <div>
+      <p id="footer-txt">This questionnaire will tell us a little bit about yourself and what kind of an intern you’d potentially be at CoDesign. Keep your resume at hand though, you’ll need to submit it at the end.</p>
     </div>
-  </div>
-</body>
-</html>
+    <script>
+      window.onload = function() {
+
+       var timeline = new TimelineMax();
+       timeline.from(".transition", 1, {y:50, autoAlpha:0},0.3)
+       .from("#footer-txt", 1, {y:20, autoAlpha:0},0.8)
+       .from(".start", 1, {x:0, autoAlpha:0},1.3)
+     }
+   </script>
+
+ </body>
+ </html>

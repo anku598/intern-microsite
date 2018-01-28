@@ -1,0 +1,9 @@
+// Font-Colors Functions goes Here
+
+@function set-notification-text-color($color) {
+  @if (lightness($color)> 50){
+    @return #f7f7f7; // Lighter background,return dark color
+  } @else{
+    @return #2a2b2f; // darker background, return lighter color
+  }
+}

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@font-face {
+  font-family: 'Avalon-Bold';
+  src: url("assets/fonts/avalon-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+body {
+  color: #2a2b2f;
+  background: #f7f7f7;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  padding: 30px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto; }
+
+img {
+  width: 100%;
+  min-width: 100px; }
+
+.home-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto; }
+  .home-intro .logo {
+    width: 10%; }
+
+.ques-two {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  .ques-two .q-title {
+    margin: 0 auto;
+    font-size: 3.5em;
+    text-align: center; }
+  .ques-two .button {
+    margin: 0 auto;
+    display: block; }
+
+/*# sourceMappingURL=style.css.map */
